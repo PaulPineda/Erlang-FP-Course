@@ -1,6 +1,6 @@
-#Erlang Functional Programming Assignments
+# Erlang Functional Programming Assignments
 
-##Week 1: Getting Started with Erlang
+## Week 1: Getting Started with Erlang
 - basics of Erlang programming
   - modules
   - functions
