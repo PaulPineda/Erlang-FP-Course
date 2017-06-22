@@ -1,5 +1,5 @@
 -module(recursion).
--export([fib/1]).
+-export([fib/1,pieces/1]).
 
 fib(0) -> 0;
 fib(1) -> 1;
