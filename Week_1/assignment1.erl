@@ -1,5 +1,5 @@
 -module(assignment1).
--export([area/1,perim/1,enclose/1]).
+-export([area/1,perim/1,enclose/1,bits/1]).
 %========
 % SHAPES
 %========
@@ -76,3 +76,12 @@ enclose({circle, {X,Y}, R})
 % ================
 
 
+% TAIL recursion
+
+bitsRec(1,S) -> S+1;
+
+bitsRec(N,S) 
+  -> bitsRec(N div 2,S + N rem 2).
+
+bits(0) -> 0;
+bits(N) -> bitsRec(N,0).
